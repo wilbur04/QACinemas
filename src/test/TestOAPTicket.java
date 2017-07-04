@@ -1,19 +1,20 @@
-import org.junit.Test;
 import org.junit.Before;
+import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by Wilbur on 04/07/2017.
  */
-public class TestTickets {
+public class TestOAPTicket {
     private Ticket t;
     @Before
     public void setUp() {
-        t = new Ticket();
+        t = new OAPTicket();
     }
 
     @Test
     public void testPrice() throws Exception {
-        assertEquals("Ticket price correct", 8, t.getPrice());
+        assertEquals("OAP ticket price correct", 8, t.getPrice());
     }
 }
