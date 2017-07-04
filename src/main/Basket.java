@@ -31,7 +31,7 @@ public class Basket {
      */
     public void add(int standard, int student, int OAP, int child){
         for (int x=0; x <= standard-1; x++){
-            ticketsList.add(new Ticket());
+            ticketsList.add(new StandardTicket());
         }
         for (int x=0; x <= student-1; x++){
             ticketsList.add(new StudentTicket());
@@ -66,6 +66,7 @@ public class Basket {
      */
     public int getTotalPrice(){
         for (int x = 0; x < ticketsList.size(); x++) {
+            ticketsList.get(x).setPrice();
             totalPrice += ticketsList.get(x).getPrice();
         }
         return totalPrice;

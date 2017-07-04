@@ -4,7 +4,8 @@
  */
 public class StudentTicket extends Ticket {
 
-    public StudentTicket(){
+    @Override
+    public void setPrice() {
         this.setPrice(6);
     }
 }

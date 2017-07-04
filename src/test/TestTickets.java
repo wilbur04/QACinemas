@@ -3,13 +3,14 @@ import org.junit.Before;
 
 import static org.junit.Assert.*;
 /**
+ * To Test StandardTickets class.
  * Created by Wilbur on 04/07/2017.
  */
 public class TestTickets {
     private Ticket t;
     @Before
     public void setUp() {
-        t = new Ticket();
+        t = new StandardTicket();
     }
 
     @Test

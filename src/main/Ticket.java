@@ -4,12 +4,11 @@ import java.util.Calendar;
  * This class is used to create the tickets for the cinema.
  * Created by Wilbur on 04/07/2017.
  */
-public class Ticket {
+public abstract class Ticket {
     private int price;
     Calendar c = Calendar.getInstance();
 
     public Ticket(){
-        this.price = 8;
     }
 
     /**
@@ -32,4 +31,6 @@ public class Ticket {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    public abstract void setPrice();
 }

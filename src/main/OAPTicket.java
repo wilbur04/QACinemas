@@ -4,7 +4,8 @@
  */
 public class OAPTicket extends Ticket{
 
-    public OAPTicket(){
+    @Override
+    public void setPrice() {
         this.setPrice(6);
     }
 }
