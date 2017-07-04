@@ -1,0 +1,18 @@
+Encapsulation:
+Encapsulation is where the different variables of a class will not directly be accessible from other classes. These can only be accessed by using other methods within the class (e.g setters and getters).
+
+Inheritance:
+Inheritance is when a class is defined as a subclass of another class. It inherits the properties on the superclass.
+
+Polymorphism:
+It is the ability of an object to take on many forms.
+
+Abstraction:
+These are classes that contain an Abstract method.
+These methods are defined in the abstract class without braces and cannot be instantiated.
+Eg:
+Public abstract class animals {
+	// enter code
+	Abstract void setNumberOfLegs();
+}
+These methods need to be defined in the subclasses.
