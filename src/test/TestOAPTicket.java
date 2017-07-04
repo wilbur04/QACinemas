@@ -4,6 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
+ * To test the OAPTicket class.
  * Created by Wilbur on 04/07/2017.
  */
 public class TestOAPTicket {
@@ -13,8 +14,13 @@ public class TestOAPTicket {
         t = new OAPTicket();
     }
 
+    /**
+     * To test if creating an OAP ticket adds new price.
+     * Expected : 6
+     * @throws Exception
+     */
     @Test
     public void testPrice() throws Exception {
-        assertEquals("OAP ticket price correct", 8, t.getPrice());
+        assertEquals("OAP ticket price correct", 6, t.getPrice());
     }
 }
