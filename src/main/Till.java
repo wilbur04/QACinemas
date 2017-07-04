@@ -39,7 +39,6 @@ public class Till {
             selectDate();
         }
         dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
-        System.out.println(dayOfWeek);
     }
 
     public void addTickets(){
